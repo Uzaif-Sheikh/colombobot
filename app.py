@@ -34,6 +34,13 @@ def check_message():
     data = request.get_json()
     message = data['entry'][0]['messaging'][0]['message']
     sender_id = data['entry'][0]['messaging'][0]['sender']['id']
+
+    try: 
+        message['text']
+    except KeyError:
+        response = webhook_2(sender_id)
+        return response
+
     if message['text'].lower() in greetings:
         response = webhook_1(sender_id)
         return response
