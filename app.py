@@ -11,6 +11,9 @@ bot = Bot(ACCESS_TOKEN)
 greetings = ["hi","hello","yo","oi","hey"]
 
 
+
+"add test"
+
 app = Flask(__name__)
 
 @app.route('/',methods=["GET","POST"])
