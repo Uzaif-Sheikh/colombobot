@@ -12,7 +12,7 @@ greetings = ["hi","hello","yo","oi","hey"]
 
 
 
-"add test, test with git commandline"
+"add test, test with WSL"
 
 app = Flask(__name__)
 
